@@ -1,0 +1,46 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  xmlns:geo="class:/spiralcraft/archetype/geo/"
+  >
+  
+  <fields>
+
+    
+    <meta:Field>
+      <name>streetAddress</name>
+      <type><String.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>cityName</name>
+      <type><String.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>stateCode</name>
+      <type><String.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>regionName</name>
+      <type><String.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>postalCode</name>
+      <type><String.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>countryCode</name>
+      <type><String.type/>
+      </type>
+    </meta:Field>    
+  </fields>
+  
+</meta:Type>
