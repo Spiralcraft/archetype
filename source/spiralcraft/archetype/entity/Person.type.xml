@@ -1,0 +1,25 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  xmlns:entity="class:/spiralcraft/archetype/entity/"
+  >
+
+  <description>A real or imaginary person
+  </description>
+  
+  <archetype><entity:Agent.type/>
+  </archetype>
+  
+  <fields>
+    
+    <meta:Field>
+    
+      <name>nickname
+      </name>
+
+      <type><String.type/>
+      </type>
+
+    </meta:Field>
+    
+  </fields>  
+</meta:Type>

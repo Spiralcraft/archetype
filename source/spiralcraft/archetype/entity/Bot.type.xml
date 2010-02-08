@@ -1,0 +1,28 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  xmlns:entity="class:/spiralcraft/archetype/entity/"
+  >
+
+  <description>An autonomous software agent
+  </description>
+  
+  <archetype><entity:Agent.type/>
+  </archetype>
+  
+  <fields>
+    
+    <meta:Field>
+    
+      <name>owner
+      </name>
+
+      <description>The Agent that this Bot represents
+      </description>
+      
+      <type><Agent.type/>
+      </type>
+
+    </meta:Field>
+    
+  </fields>  
+</meta:Type>

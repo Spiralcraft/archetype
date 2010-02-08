@@ -1,0 +1,21 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  xmlns:entity="class:/spiralcraft/archetype/entity/"
+  >
+
+  <description>A collection of Agents (Groups, Persons or Organizations)
+  </description>
+  
+  <fields>
+      
+    <meta:Field>
+      <name>members
+      </name>
+      
+      <type><entity:Agent.list/>
+      </type>
+      
+    </meta:Field>
+    
+  </fields>
+</meta:Type>
