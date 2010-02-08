@@ -5,29 +5,46 @@
   
   <fields>
 
-    
     <meta:Field>
-      <name>streetAddress</name>
+      <name>streetAddress
+      </name>
       <type><String.type/>
       </type>
+      <description>Building number, street name
+      </description>
+    </meta:Field>
+
+    <meta:Field>
+      <name>postOfficeBox</name>
+      <type><String.type/>
+      </type>
+      <description>example: PO BOX 123
+      </description>
+    </meta:Field>
+
+    <meta:Field>
+      <name>locator
+      </name>
+      <type><String.type/>
+      </type>
+      <description>Unit, Bldg., Apt., Ste., Mail Stop, etc. 
+      </description>
     </meta:Field>
     
     <meta:Field>
-      <name>cityName</name>
+      <name>locality</name>
       <type><String.type/>
       </type>
+      <description>City or other locality
+      </description>
     </meta:Field>
     
     <meta:Field>
-      <name>stateCode</name>
+      <name>region</name>
       <type><String.type/>
       </type>
-    </meta:Field>
-    
-    <meta:Field>
-      <name>regionName</name>
-      <type><String.type/>
-      </type>
+      <description>State, province or territory
+      </description>
     </meta:Field>
     
     <meta:Field>
