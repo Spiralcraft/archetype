@@ -6,6 +6,9 @@
   <description>A collection of Agents (Groups, Persons or Organizations)
   </description>
   
+  <archetype><entity:Agent.type/>
+  </archetype>
+    
   <fields>
       
     <meta:Field>
