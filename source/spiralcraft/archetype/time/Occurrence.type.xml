@@ -1,0 +1,17 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"  
+  xmlns:time="class:/spiralcraft/time/"
+  >
+  <fields>
+  
+    <meta:Field>
+      <name>timestamp
+      </name>
+      
+      <type><time:Instant/>
+      </type>
+    
+    </meta:Field> 
+    
+  </fields>  
+</meta:Type>

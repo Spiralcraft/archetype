@@ -1,0 +1,32 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"  
+  xmlns:time="class:/spiralcraft/time/"
+  xmlns:atime="class:/spiralcraft/archetype/time/"
+  xmlns:entity="class:/spiralcraft/archetype/entity/"
+  >
+  <archetype><atime:Occurrence.type/>
+  </archetype>
+  
+  <fields>
+  
+    <meta:Field>
+      <name>reporter
+      </name>
+      
+      <type><entity:Agent.type/>
+      </type>
+    
+    </meta:Field>
+    
+    <meta:Field>
+      <name>subject
+      </name>
+      
+      <type><entity:Agent.type/>
+      </type>
+    
+    </meta:Field>
+    
+    
+  </fields>  
+</meta:Type>
