@@ -6,7 +6,7 @@
   <description>An autonomous software agent
   </description>
   
-  <archetype><entity:Agent.type/>
+  <archetype><entity:Actor.type/>
   </archetype>
   
   <fields>
@@ -19,7 +19,7 @@
       <description>The Agent that this Bot represents
       </description>
       
-      <type><Agent.type/>
+      <type><Actor.type/>
       </type>
 
     </meta:Field>

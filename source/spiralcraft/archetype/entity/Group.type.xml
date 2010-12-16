@@ -6,7 +6,7 @@
   <description>A collection of Agents (Groups, Persons or Organizations)
   </description>
   
-  <archetype><entity:Agent.type/>
+  <archetype><entity:Actor.type/>
   </archetype>
     
   <fields>
@@ -15,7 +15,7 @@
       <name>members
       </name>
       
-      <type><entity:Agent.list/>
+      <type><entity:Actor.list.type/>
       </type>
       
     </meta:Field>

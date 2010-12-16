@@ -1,0 +1,55 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"  
+  xmlns:time="class:/spiralcraft/time/"
+  xmlns:atime="class:/spiralcraft/archetype/time/"
+  >
+  
+  
+  <fields>
+  
+    <meta:Field>
+      <name>startTime
+      </name>
+      
+      <type><Instant.type/>
+      </type>
+    
+    </meta:Field> 
+
+    <meta:Field>
+      <name>endTime
+      </name>
+      
+      <type><Instant.type/>
+      </type>
+    
+    </meta:Field> 
+
+  </fields>
+  
+  <methods>
+    
+    <meta:Method>
+      <name>duration
+      </name>
+      
+      <parameterTypes>
+        <time:Chronom.array.type/>
+      </parameterTypes>
+
+      <returnType>
+        <time:Duration.type/>      
+      </returnType>
+      
+      <contextX>
+      {
+        units:=[@time:Chronom][{}] 
+        ,calendar:=[@time:Calendar].@DEFAULT
+      }
+      </contextX>
+      
+      <x>.calendar.subtract(..endTime,..startTime,.units)
+      </x>
+    </meta:Method>
+  </methods>  
+</meta:Type>

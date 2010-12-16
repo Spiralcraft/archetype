@@ -8,10 +8,11 @@
       <name>timestamp
       </name>
       
-      <type><time:Instant/>
+      <type><Instant.type/>
       </type>
     
     </meta:Field> 
     
+
   </fields>  
 </meta:Type>

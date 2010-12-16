@@ -13,7 +13,7 @@
       <name>reporter
       </name>
       
-      <type><entity:Agent.type/>
+      <type><entity:Actor.type/>
       </type>
     
     </meta:Field>
@@ -22,7 +22,7 @@
       <name>subject
       </name>
       
-      <type><entity:Agent.type/>
+      <type><entity:Actor.type/>
       </type>
     
     </meta:Field>

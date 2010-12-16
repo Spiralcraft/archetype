@@ -6,7 +6,7 @@
   <description>A real or imaginary person
   </description>
   
-  <archetype><entity:Agent.type/>
+  <archetype><entity:Actor.type/>
   </archetype>
   
   <fields>
