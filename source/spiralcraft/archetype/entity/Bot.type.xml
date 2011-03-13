@@ -16,7 +16,7 @@
       <name>owner
       </name>
 
-      <description>The Agent that this Bot represents
+      <description>The Actor that this Bot represents
       </description>
       
       <type><Actor.type/>
