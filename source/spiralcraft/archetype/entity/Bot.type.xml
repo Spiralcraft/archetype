@@ -13,10 +13,10 @@
     
     <meta:Field>
     
-      <name>owner
+      <name>controller
       </name>
 
-      <description>The Actor that this Bot represents
+      <description>The Actor who controls this Bot
       </description>
       
       <type><Actor.type/>

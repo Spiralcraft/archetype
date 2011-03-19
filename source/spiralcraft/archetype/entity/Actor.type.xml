@@ -3,7 +3,7 @@
   xmlns:entity="class:/spiralcraft/archetype/entity/"
   >
 
-  <description>
+  <description>An identity which is responsible for actions within a system.
   </description>
   
   <fields>
@@ -22,12 +22,14 @@
       <name>groups
       </name>
       
-      <description>The groups in which this agent is a member
+      <description>The groups in which this Actor is a member
       </description>
-      
+
       <type><entity:Group.list.type/>
       </type>
+      
     </meta:Field>
+    
     
   </fields>
 </meta:Type>

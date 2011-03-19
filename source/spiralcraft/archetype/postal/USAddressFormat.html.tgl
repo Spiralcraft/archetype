@@ -1,0 +1,2 @@
+<%=streetAddress/%> <%=""+locator/%><br/>
+<%=locality/%> <%=region/%> <%=postalCode/%>
