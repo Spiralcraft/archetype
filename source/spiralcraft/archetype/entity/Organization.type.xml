@@ -4,21 +4,10 @@
   xmlns:postal="class:/spiralcraft/archetype/postal/"
   >
 
-  <description>A formalized group, such as a business 
+  <description>A formalized Group, with an external identity
   </description>
 
   <archetype><entity:Group.type/>
   </archetype>
-  
-  <fields>
-    <meta:Field>
-      <name>postalAddress
-      </name>
-      
-      <type><postal:Address.type/>
-      </type>
-    </meta:Field>
-  
-  </fields>
-  
+   
 </meta:Type>

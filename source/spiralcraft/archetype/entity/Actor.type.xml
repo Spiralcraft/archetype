@@ -10,13 +10,17 @@
 
     <meta:Field>
     
-      <name>displayName
+      <name>commonName
       </name>
 
       <type><String.type/>
       </type>
 
-    </meta:Field>    
+      <description>The name by which this Actor wishes to be known to the
+        public. Not necessarily unique.
+      </description>
+
+    </meta:Field>
 
     <meta:Field>
       <name>groups

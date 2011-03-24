@@ -3,7 +3,7 @@
   xmlns:entity="class:/spiralcraft/archetype/entity/"
   >
 
-  <description>An autonomous software agent
+  <description>A program acting on behalf of another Actor
   </description>
   
   <archetype><entity:Actor.type/>
@@ -16,7 +16,7 @@
       <name>controller
       </name>
 
-      <description>The Actor who controls this Bot
+      <description>The Actor who controls this Agent
       </description>
       
       <type><Actor.type/>

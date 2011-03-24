@@ -3,7 +3,7 @@
   xmlns:entity="class:/spiralcraft/archetype/entity/"
   >
 
-  <description>A collection of Agents (Groups, Persons or Organizations)
+  <description>A collection of Actors
   </description>
   
   <archetype><entity:Actor.type/>
