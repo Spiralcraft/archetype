@@ -8,6 +8,24 @@
   
   <fields>
 
+    <meta:SequenceField>
+      <name>lsid
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    </meta:SequenceField>
+    
+    <meta:Field>
+    
+      <name>displayName
+      </name>
+
+      <type><String.type/>
+      </type>
+
+    </meta:Field> 
+    
     <meta:Field>
     
       <name>commonName
