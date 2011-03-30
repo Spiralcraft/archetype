@@ -6,8 +6,8 @@
   <description>A collection of Actors
   </description>
   
-  <archetype><entity:Actor.type/>
-  </archetype>
+  <baseType><entity:Actor.type/>
+  </baseType>
     
   <fields>
       

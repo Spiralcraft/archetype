@@ -3,28 +3,19 @@
   xmlns:entity="class:/spiralcraft/archetype/entity/"
   >
 
-  <description>An identity which is responsible for actions within a system.
+  <description>An individual or role responsible for actions within some
+    context.
   </description>
   
   <fields>
 
     <meta:SequenceField>
-      <name>lsid
+      <name>id
       </name>
       
       <type><LSID.type/>
       </type>
     </meta:SequenceField>
-    
-    <meta:Field>
-    
-      <name>displayName
-      </name>
-
-      <type><String.type/>
-      </type>
-
-    </meta:Field> 
     
     <meta:Field>
     
@@ -54,4 +45,14 @@
     
     
   </fields>
+  
+  <keys>
+    <meta:Key>
+      <fieldList>id
+      </fieldList>
+      
+      <primary>true
+      </primary>
+    </meta:Key>
+  </keys>
 </meta:Type>

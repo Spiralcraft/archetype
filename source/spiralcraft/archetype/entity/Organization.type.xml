@@ -7,7 +7,7 @@
   <description>A formalized Group, with an external identity
   </description>
 
-  <archetype><entity:Group.type/>
-  </archetype>
+  <baseType><entity:Group.type/>
+  </baseType>
    
 </meta:Type>

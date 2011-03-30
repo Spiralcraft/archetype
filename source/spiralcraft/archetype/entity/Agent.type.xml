@@ -6,8 +6,8 @@
   <description>A program acting on behalf of another Actor
   </description>
   
-  <archetype><entity:Actor.type/>
-  </archetype>
+  <baseType><entity:Actor.type/>
+  </baseType>
   
   <fields>
     

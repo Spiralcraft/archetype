@@ -1,0 +1,66 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  xmlns:entity="class:/spiralcraft/archetype/entity/"
+  >
+
+  <description>An Actor that interacts with a system or application context,
+    subject to authentication and authorization constraints. An Identity is
+    a construct that intersects an authenticated login and the security 
+    infrastructure of a system or application context. Identity is an
+    Actor that is local to the application context.
+  </description>
+  
+  <baseType><entity:Actor.type/>
+  </baseType>
+  
+  <fields>
+    
+    
+    <meta:Field>
+    
+      <name>principalName
+      </name>
+
+      <type><String.type/>
+      </type>
+
+      <required>true
+      </required>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>personaId
+      </name>
+      
+      <type><String.type/>
+      </type>
+    </meta:Field>
+    
+  </fields>  
+  
+  <keys>
+    <meta:Key>
+      <fieldList>principalName
+      </fieldList>
+      
+      <unique>true
+      </unique>
+    </meta:Key>
+
+    <meta:Key>
+      <description>The Actor identified by this Identity as presented to
+        other participants of the system. 
+      </description>
+      
+      <name>persona
+      </name>
+      
+      <fieldList>personaId
+      </fieldList>
+      
+      <foreignType><entity:Actor.type/>
+      </foreignType>
+    </meta:Key>
+
+  </keys>
+</meta:Type>
