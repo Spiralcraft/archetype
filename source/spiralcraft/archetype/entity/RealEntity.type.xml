@@ -1,0 +1,22 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  xmlns:entity="class:/spiralcraft/archetype/entity/"
+  xmlns:social="class:/spiralcraft/archetype/social/"
+  >
+
+  <description>An off-line identity
+  </description>
+    
+  <fields>
+  
+    <meta:Field>
+      <name>contactList
+      </name>
+      
+      <type><social:Contact.list.type/>
+      </type>
+      
+    </meta:Field>
+    
+  </fields>
+</meta:Type>

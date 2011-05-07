@@ -1,0 +1,43 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  xmlns:entity="class:/spiralcraft/archetype/entity/"
+  >
+
+  <description>A membership in a Group
+  </description>
+    
+  <fields>
+    <meta:Field>
+      <name>groupId
+      </name>
+      <type><LSID.type/>
+      </type>
+    </meta:Field>
+      
+    <meta:Field>
+      <name>memberId
+      </name>
+      <type><LSID.type/>
+      </type>
+    </meta:Field>
+
+    <meta:Field>
+      <name>group
+      </name>
+      
+      <type><entity:Group.type/>
+      </type>
+      
+    </meta:Field>
+    
+    <meta:Field>
+      <name>member
+      </name>
+      
+      <type><entity:Actor.type/>
+      </type>
+      
+    </meta:Field>
+    
+  </fields>
+</meta:Type>

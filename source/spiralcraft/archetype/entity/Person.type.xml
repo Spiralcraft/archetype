@@ -1,25 +1,32 @@
 <meta:Type
   xmlns:meta="class:/spiralcraft/data/types/meta/"
   xmlns:entity="class:/spiralcraft/archetype/entity/"
+  xmlns:social="class:/spiralcraft/archetype/social/"  
   >
-
-  <description>A real or imaginary person
+   
+  <description>An individual with an off-line identity
   </description>
   
   <baseType><entity:Actor.type/>
   </baseType>
   
+  <archetype><entity:RealEntity.type/>
+  </archetype>
+
+  
   <fields>
-    
-    <meta:Field>
-    
-      <name>nickname
+  
+    <meta:RelativeField>
+      <name>contactList
       </name>
-
-      <type><String.type/>
+      
+      <type><social:Contact.list.type/>
       </type>
-
-    </meta:Field>
+      
+      <referencedFieldList>actorId
+      </referencedFieldList>
+    </meta:RelativeField>
     
-  </fields>  
+  </fields>
+    
 </meta:Type>

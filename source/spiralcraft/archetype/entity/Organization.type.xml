@@ -2,12 +2,30 @@
   xmlns:meta="class:/spiralcraft/data/types/meta/"
   xmlns:entity="class:/spiralcraft/archetype/entity/"
   xmlns:postal="class:/spiralcraft/archetype/postal/"
+  xmlns:social="class:/spiralcraft/archetype/social/"  
   >
 
-  <description>A formalized Group, with an external identity
+  <description>A formalized Group, with an off-line identity
   </description>
 
   <baseType><entity:Group.type/>
   </baseType>
+  
+  <archetype><entity:RealEntity.type/>
+  </archetype>
    
+  <fields>
+  
+    <meta:RelativeField>
+      <name>contactList
+      </name>
+      
+      <type><social:Contact.list.type/>
+      </type>
+      
+      <referencedFieldList>actorId
+      </referencedFieldList>
+    </meta:RelativeField>
+    
+  </fields>   
 </meta:Type>

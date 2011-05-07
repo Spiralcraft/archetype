@@ -1,0 +1,56 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  xmlns:bizm="class:/spiralcraft/biz/core/meta/"
+  xmlns:entity="class:/spiralcraft/archetype/entity/"
+  xmlns:postal="class:/spiralcraft/archetype/postal/"
+  xmlns:net="class:/spiralcraft/archetype/net/"
+  >
+  
+  <description>A set of contact information for use in a more specific
+    contextual framework.
+  </description>
+  
+  <fields>
+    
+    <meta:Field>
+      <name>knownAs
+      </name>
+      <type><String.type/>
+      </type>
+    </meta:Field>
+
+    <meta:Field>
+      <name>attentionName
+      </name>
+      <type><String.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>organizationName
+      </name>
+      <type><String.type/>
+      </type>
+    </meta:Field>
+
+    <meta:Field>
+      <name>postalAddress</name>
+      <type><postal:Address.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>email</name>
+      <type><net:EmailAddress.type/>
+      </type>
+    </meta:Field>
+
+    <meta:Field>
+      <name>phone</name>
+      <type><net:PhoneNumber.type/>
+      </type>
+    </meta:Field>
+
+  </fields>
+
+</meta:Type>
