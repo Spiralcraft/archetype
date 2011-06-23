@@ -1,0 +1,80 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  xmlns:entity="class:/spiralcraft/archetype/entity/"
+  xmlns:geo="class:/spiralcraft/archetype/geo/"
+  >
+
+  <description>A named geographic point or area of interest within a given
+    application context. A Place is part of a containership hierarchy of other
+    Places of interest within the application context.
+  </description>
+    
+  <fields>
+  
+    <meta:SequenceField>
+      <name>id
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    </meta:SequenceField>
+  
+    <meta:Field>
+      <name>name
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>containingPlaceId
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    
+    </meta:Field>
+    
+    <meta:RelativeField>
+      <name>containingPlace
+      </name>
+      
+      <description>The smallest Place that fully contains this Place.
+      </description>
+      
+      <type><geo:Place.type/>
+      </type>
+      
+      <fieldList>containingPlaceId
+      </fieldList>
+      
+    </meta:RelativeField>
+
+    <meta:RelativeField>
+      <name>containedPlaces
+      </name>
+      
+      <description>The largest Places that this Place
+        fully contains.
+      </description>
+      
+      <type><geo:Place.list.type/>
+      </type>
+      
+      <referencedFieldList>containingPlaceId
+      </referencedFieldList>
+      
+    </meta:RelativeField>
+  </fields>
+  
+  <keys>
+    <meta:Key>
+      <primary>true
+      </primary>
+       
+      <fieldList>id
+      </fieldList> 
+    </meta:Key>
+  </keys>
+</meta:Type>
