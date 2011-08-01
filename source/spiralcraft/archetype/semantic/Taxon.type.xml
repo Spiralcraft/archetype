@@ -1,12 +1,10 @@
 <meta:Type
   xmlns:meta="class:/spiralcraft/data/types/meta/"
   xmlns:entity="class:/spiralcraft/archetype/entity/"
-  xmlns:geo="class:/spiralcraft/archetype/geo/"
+  xmlns:sem="class:/spiralcraft/archetype/semantic/"
   >
 
-  <description>A named geographic point or area of interest within a given
-    application context. A Place is part of a containership hierarchy of other
-    Places of interest within the application context.
+  <description>A unit in a taxonomy that describes one facet of a Concept
   </description>
     
   <fields>
@@ -20,6 +18,52 @@
     </meta:SequenceField>
   
     <meta:Field>
+      <name>taxonomyId
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    </meta:Field>
+
+    <meta:Field>
+      <name>parentId
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:RelativeField>
+      <name>parent
+      </name>
+      
+      <description>The more general classification which defines this Taxon.
+      </description>
+      
+      <type><sem:Taxon.type/>
+      </type>
+      
+      <fieldList>parentId
+      </fieldList>
+      
+    </meta:RelativeField>
+    
+    <meta:RelativeField>
+      <name>children
+      </name>
+      
+      <description>The more specific classifications defined by this Taxon.
+      </description>
+      
+      <type><sem:Taxon.list.type/>
+      </type>
+      
+      <referencedFieldList>parentId
+      </referencedFieldList>
+      
+    </meta:RelativeField>    
+        
+    <meta:Field>
       <name>name
       </name>
       
@@ -27,56 +71,6 @@
       </type>
     </meta:Field>
     
-    <meta:Field>
-      <name>taxonomyId
-      </name>
-      
-      <description>
-      </description>
-      
-      <type><LSID.type/>
-      </type>
-    </meta:Field>
-
-    <meta:Field>
-      <name>containingPlaceId
-      </name>
-      
-      <type><LSID.type/>
-      </type>
-    
-    </meta:Field>
-    
-    <meta:RelativeField>
-      <name>containingPlace
-      </name>
-      
-      <description>The smallest Place that fully contains this Place within
-        this taxonomy
-      </description>
-      
-      <type><geo:Place.type/>
-      </type>
-      
-      <fieldList>containingPlaceId
-      </fieldList>
-      
-    </meta:RelativeField>
-
-    <meta:RelativeField>
-      <name>containedPlaces
-      </name>
-      
-      <description>The largest Places that this Place fully contains.
-      </description>
-      
-      <type><geo:Place.list.type/>
-      </type>
-      
-      <referencedFieldList>containingPlaceId
-      </referencedFieldList>
-      
-    </meta:RelativeField>
   </fields>
   
   <keys>

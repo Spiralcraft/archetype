@@ -1,0 +1,40 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  xmlns:entity="class:/spiralcraft/archetype/entity/"
+  xmlns:geo="class:/spiralcraft/archetype/geo/"
+  >
+
+  <description>An abstract concept defined by multiple taxons that may be
+    in different taxonomies.
+  </description>
+    
+  <fields>
+  
+    <meta:SequenceField>
+      <name>id
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    </meta:SequenceField>
+  
+    <meta:Field>
+      <name>name
+      </name>
+      
+      <type><String.type/>
+      </type>
+    </meta:Field>
+    
+  </fields>
+  
+  <keys>
+    <meta:Key>
+      <primary>true
+      </primary>
+       
+      <fieldList>id
+      </fieldList> 
+    </meta:Key>
+  </keys>
+</meta:Type>
