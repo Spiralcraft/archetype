@@ -1,0 +1,29 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  >
+  
+  <baseType><ContentItem.type/>
+  </baseType>
+  
+  
+  <description>
+    Text that is presented at one or more locations within a publication,
+      site or other collection.
+  </description>
+  
+  <fields>
+    <meta:Field>
+      <name>name
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+      
+      <description>A name that describes this copy item that will be used
+        to distinguish it from other copy items in the collection
+      </description>
+    </meta:Field>
+    
+  </fields>
+  
+</meta:Type>

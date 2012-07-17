@@ -1,0 +1,39 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  >
+  
+  <baseType><ContentItem.type/>
+  </baseType>
+  
+  
+  <description>
+    A self-contained unit of publication that is part of a serial collection
+      such as a forum or blog      
+  </description>
+  
+  <fields>
+    <meta:Field>
+      <name>collectionId
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+      
+      <description>The collection to which this Post was published
+      </description>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>publishDate
+      </name>
+      
+      <type><Date.type/>
+      </type>
+      
+      <description>The date this post was published
+      </description>
+    </meta:Field>
+    
+  </fields>
+  
+</meta:Type>

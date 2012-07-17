@@ -1,0 +1,36 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  >
+  
+  <description>
+    A tagged version of a Content Item
+  </description>
+  
+  <fields>
+  
+    <meta:Field>
+      <name>contentVersionId
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    
+    </meta:Field>
+    
+    <meta:Field>
+      <name>tag
+      </name>
+      
+      <type><String.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>contentItemId
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    </meta:Field>    
+  </fields>  
+</meta:Type>

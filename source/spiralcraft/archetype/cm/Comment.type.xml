@@ -1,0 +1,25 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  >
+  
+  <baseType><ContentItem.type/>
+  </baseType>
+  
+  <description>
+    A user comment on an item of content, or a reply to another comment
+  </description>
+  
+  <fields>
+    <meta:Field>
+      <name>commentForId
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+      
+      <description>The contentItem being commented on
+      </description>
+    </meta:Field>
+  </fields>
+  
+</meta:Type>

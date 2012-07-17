@@ -1,0 +1,22 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  >
+  
+  <description>
+    A collection of content items
+  </description>
+
+  <fields>
+  
+    <meta:Field>
+      <name>id
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    
+    </meta:Field>
+  </fields>
+
+  
+</meta:Type>

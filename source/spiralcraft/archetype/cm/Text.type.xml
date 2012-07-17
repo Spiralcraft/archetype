@@ -1,0 +1,26 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  >
+  
+  <description>
+    An archetype used by components that allow users to interact with
+      textual content
+  </description>
+  
+  <archetype><Content.type/>
+  </archetype>
+  
+  <fields>
+      
+    <meta:Field>
+      <name>content
+      </name>
+      
+      <type><String.type/>
+      </type>
+    
+    </meta:Field>
+    
+    
+  </fields>  
+</meta:Type>

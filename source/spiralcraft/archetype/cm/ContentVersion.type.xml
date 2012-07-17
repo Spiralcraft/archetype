@@ -1,0 +1,65 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  >
+  
+  <description>
+    A version of a ContentItem
+  </description>
+  
+  <fields>
+  
+    <meta:Field>
+      <name>id
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    
+    </meta:Field>
+
+    <meta:Field>
+      <name>contentItemId
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    
+    </meta:Field>
+    
+    <meta:Field>
+      <name>editorId
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>editDate
+      </name>
+      
+      <type><Date.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>baseVersion
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+      
+      <description>The version that this version replaces
+      </description>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>content
+      </name>
+      
+      <type><Content.type/>
+      </type>
+    </meta:Field>
+    
+  </fields>  
+</meta:Type>

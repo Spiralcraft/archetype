@@ -1,0 +1,37 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  >
+  
+  <description>
+    A generic item of content
+  </description>
+  
+  <fields>
+  
+    <meta:Field>
+      <name>id
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    
+    </meta:Field>
+    
+    <meta:Field>
+      <name>creatorId
+      </name>
+      
+      <type><LSID.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>creationDate
+      </name>
+      
+      <type><Date.type/>
+      </type>
+    </meta:Field>
+    
+  </fields>  
+</meta:Type>

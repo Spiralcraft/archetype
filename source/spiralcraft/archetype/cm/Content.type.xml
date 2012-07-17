@@ -1,0 +1,56 @@
+<meta:Type
+  xmlns:meta="class:/spiralcraft/data/types/meta/"
+  xmlns:vfs="class:/spiralcraft/vfs/"
+  >
+  
+  <description>
+    An archetype used by components that allow users to interact with
+      arbitrary content
+  </description>
+  
+  <fields>
+  
+    <meta:Field>
+      <name>contentType
+      </name>
+      <description>The mime type of the content
+      </description>
+      <type><String.type/>
+      </type>
+    </meta:Field>
+
+    <meta:Field>
+      <name>contentEncoding
+      </name>
+      <description>How the content is encoded
+      </description>
+      <type><String.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>contentLength
+      </name>
+      <description>The length of the content in its encoded form
+      </description>
+      <type><Long.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>lastModified
+      </name>
+      <type><Date.type/>
+      </type>
+    </meta:Field>
+    
+    <meta:Field>
+      <name>resource
+      </name>
+      <description>Provides access to the content through VFS IO streams
+      </description>
+      <type><vfs:Resource.type/>
+      </type>
+    </meta:Field>
+  </fields>  
+</meta:Type>
