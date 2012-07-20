@@ -31,17 +31,22 @@
 
     </meta:Field>
 
-    <meta:Field>
-      <name>groups
+    <meta:RelativeField>
+      <name>memberships
       </name>
       
       <description>The groups in which this Actor is a member
       </description>
 
-      <type><entity:Group.list.type/>
+      <type><entity:Membership.list.type/>
       </type>
       
-    </meta:Field>
+      <fieldList>id
+      </fieldList>
+
+      <referencedFieldList>memberId
+      </referencedFieldList>
+    </meta:RelativeField>
     
     
   </fields>
