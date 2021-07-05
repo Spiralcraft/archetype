@@ -5,6 +5,7 @@
   xmlns:postal="class:/spiralcraft/archetype/postal/"
   xmlns:net="class:/spiralcraft/archetype/net/"
   xmlns:social="class:/spiralcraft/archetype/social/"
+  xmlns:dm="class:/spiralcraft/data/methods"
   >
   
   <description>Contact information for an Actor
@@ -61,4 +62,8 @@
       </primary>
     </meta:Key>
   </keys>
+  
+  <methods>
+    <dm:ForId/>
+  </methods>
 </meta:Type>
