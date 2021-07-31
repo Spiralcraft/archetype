@@ -5,6 +5,8 @@
     <rule:PatternRule>
       <ignoreNull>true
       </ignoreNull>
+      <ignoreEmpty>true
+      </ignoreEmpty>
       <regex>\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]+\b
       </regex>
       <message>Email address must be valid.
